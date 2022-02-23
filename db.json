@@ -1,0 +1,85 @@
+{
+    "questions": [
+        {
+            "question": "What is the full form of HTML?",
+            "answer": [{
+                "ansOne": "Hypertext Markup Language",
+                "ansTwo": "HyperTest Machine Language",
+                "ansTheree" : "Highlighted Text Markup Language"
+            }]
+        },
+        {
+            "question": "What is the full form of CSS?",
+            "answer": [{
+                "ansOne": "Cascading Style Sheets",
+                "ansTwo": "Computer Style Sheets",
+                "ansTheree" : "Creative Style Sheets"
+            }]
+        },
+        {
+            "question": "How to create a function is JavaScript?",
+            "answer": [{
+                "ansOne": "function = myFunction()",
+                "ansTwo": "function myFunction()",
+                "ansTheree" : "function : myFunction()"
+            }]
+        },
+        {
+            "question": "Which is the correct CSS syntax?",
+            "answer": [{
+                "ansOne": "body:color=black",
+                "ansTwo": "{body: color = 'black'}",
+                "ansTheree" : "body{color: black}"
+            }]
+        },
+        {
+            "question": "Which one of the following also known as Conditional Expression:",
+            "answer": [{
+                "ansOne": "immediate if",
+                "ansTwo": "Switch statement",
+                "ansTheree" : "Alternative to if-else"
+            }]
+        },
+        {
+            "question": "The 'function' and 'var' are known as:",
+            "answer": [{
+                "ansOne": "Keywords",
+                "ansTwo": "Data types",
+                "ansTheree" : "Declaration statements"
+            }]
+        },
+        {
+            "question": "How do you insert a comment in a CSS file?",
+            "answer": [{
+                "ansOne": "// comment //",
+                "ansTwo": "/* comment */",
+                "ansTheree" : "// comment"
+            }]
+        },
+        {
+            "question": " Which of the following variables takes precedence over the others if the names are the same?",
+            "answer": [{
+                "ansOne": "Global variable",
+                "ansTwo": "The local element",
+                "ansTheree" : "None of above"
+            }]
+        },
+        {
+            "question": "Which of the following type of a variable is volatile?",
+            "answer": [{
+                "ansOne": "Mutable variable",
+                "ansTwo": "Dynamic variable",
+                "ansTheree" : "Immutable variable"
+            }]
+        },
+        {
+            "question": "Which property is used to change the background color?",
+            "answer": [{
+                "ansOne": "color",
+                "ansTwo": "background-color",
+                "ansTheree" : "bgColor"
+            }]
+        }
+
+    ]
+}

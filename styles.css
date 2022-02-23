@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color: #007bff;
+    --bg-white: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+}
+
+body{
+  background: var(--primary-color);
+}
+
+.start-btn,
+.info-box,
+.quiz-box,
+.result-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2),
+                0 0.25rem 0.5rem rgba(0, 0, 0, 0.19);
+}
+
+.start-btn.btn{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: var(--bg-white);
+    cursor: pointer;
+}
+
+.info-box{
+    /* display: none; */
+    width: 34rem;
+    background-color: var(--bg-white);
+    border-radius: 00.25rem;
+    display: none;
+    /* pointer-events:none; */
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.info-box .info-title{
+    height: 4rem;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    padding: 0 2.2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.info-box .info-list{
+    padding: 1rem 2.25rem;
+
+}
+
+.info-box .info-list .info{
+    margin: 0.25rem 0;   
+}
+
+.info-box .info-list .info span {
+    color: var(--primary-color);
+}
+
+.info-box .button-section{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 2.25rem;
+    border-top: 1px solid lightgray;
+}
+
+.info-box .button-section button{
+    margin: 0 0.25rem;
+    height: 2.5rem;
+    width: 6.25rem;
+    border: 1px solid transparent;
+    /* background-color: var(--primary-color); */
+    border-radius: 0.25rem;
+    color: var(--bg-white);
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.button-section button.quit{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.button-section button .quit:hover{
+    color: var(--bg-white);
+    background-color: var(--primary-color);
+}
+
+.button-section button.restart{
+    color: var(--bg-white);
+    background-color: var(--primary-color);
+
+}
+
+.button-section button .restart:hover{
+    background: #0263ca;
+}
+
+.quiz-box{
+    display: none;
+    width: 34.5rem;
+    background: var(--bg-white);
+    border-radius: 0.25rem;
+    /* pointer-events: none; */
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.quiz-box header{
+    position: relative;
+    z-index: 99;
+    height: 4.5rem;
+    padding: 0 2rem;
+    background: var(--bg-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.25rem 0.25rem 0 0;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-box header .title{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.quiz-box header .timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 9rem;
+    height: 3rem;
+    background: #cce4ff;
+    border: 1px solid #b8daff;
+    border-radius: 0.25rem;
+    padding: 0 0.5rem;
+}
+
+.quiz-box header .timer .timer-text{
+    font-weight: 400;
+    user-select: none;
+}
+
+.quiz-box header .timer .timer-sec{
+    font-size: 18px;
+    font-weight: 500;
+    background: #343a40;
+    height: 2rem;
+    width: 3rem;
+    color: var(--bg-white);
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 0.25rem;
+    border: 1px solid #343a40;
+    user-select: none;
+}
+
+.quiz-box .section{
+    padding: 1.5rem 2rem 1.25rem 2rem;
+    background: var(--bg-white);
+}
+
+.quiz-box .section form .quest-text{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.quiz-box .section .option-list{
+    padding: 1.25rem 0;
+    display: block;
+}
+
+.section form .option-list .option{
+    background: aliceblue;
+    border: 1px solid #84c5fe;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    transition: all 0.3s ease;
+}
+
+.section  form .option-list .option:hover{
+    color: #004085;
+    background: #cce5ff;
+    border-radius: #b8daff;
+}
+
+.option-list .option:last-child{
+    margin-bottom: 0px;
+}
+
+.quiz-box footer{
+    height: 4rem;
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quiz-box footer .total-quest span{
+    display: flex;
+    user-select: none;
+}
+
+footer .total-quest span p{
+    font-weight: 500;
+    padding: 0 0.25rem;
+}
+
+footer .total-quest span p:first-child{
+    padding-left: 0px;
+}
+
+footer .next-btn{
+    height: 2.5rem;
+    padding: 0 0.75rem;
+    font-size: 18px;
+    font-weight: 400;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    background: var(--primary-color);
+    color: var(--bg-white);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+footer .next-btn:hover{
+    background: #0263ca;
+}
+
+.result-box{
+    display: none;
+    background: var(--bg-white);
+    width: 30rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* opacity: 0; */
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.result-box .complete-text{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.result-box .score-text span{
+    display: flex;
+    margin: 0.75rem 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.result-box .score-text span p{
+    font-weight: 600;
+    padding: 0 0.25rem;
+}
+
+.result-box .button-section{
+    display: flex;
+    margin: 1.25rem 0;
+}
+
+.result-box .button-section button{
+    margin: 0 10px;
+    height: 2.5rem;
+    padding: 0 1.25rem;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    font-size: 18px;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 3s ease;
+}

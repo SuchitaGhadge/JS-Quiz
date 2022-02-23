@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <!-- start quiz app button -->
+    <button class="btn start-btn" id="startBtn">Start Quiz</button>
+
+    <section class="info-box">
+        <div class="info-title">
+            Some rules of this Quiz
+        </div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>60 seconds</span> per question.</div>
+            <div class="info">2. Once you select your answer, you can't reselect. </div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while ypou are playing.</div>
+            <div class="info">5. You will get points based on your correct answers.</div>
+        </div>
+        <div class="button-section">
+            <button id="quit" class="quit">Exit Quiz</button>
+            <button id="restart" class="restart">Continue</button>
+        </div>
+    </section>
+
+    <main class="quiz-box">
+        <header>
+            <div class="title">
+                Quiz Application
+            </div>
+            <div class="timer">
+                <div class="timer-text">
+                    Time Left:
+                </div>
+                <div class="timer-sec">
+                    60
+                </div>
+            </div>
+        </header>
+        <section class="section">
+            <div class="quest-text">
+                <form class="quiz-form">
+                    <span id="question">What does HTML stands for?</span>
+                    <div class="option-list">
+                        <div class="option">
+                            <input type="radio" name="answers" value="" id="selectOne">
+                            <span id="ansOne">HyperText Markup Language</span>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="answers" value="" id="selectTwo">
+                            <span id="ansTwo">HyperText Markup Language</span>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="answers" value="" id="selectThree">
+                            <span id="ansThree">Hyper Text Preprocessor</span>
+                        </div>
+                        <!-- <div class="option">
+                            <input type="radio" name="answers" id="">
+                            <span id="ansFour">Hyper Text Preprocessor</span>
+                        </div> -->
+                    </div>
+                </form>
+                
+            </div>
+            
+        </section>
+
+        <!-- quiz footer -->
+        <footer>
+            <div class="total-quest">
+                <span><p id="quesNum">2</p>of <p>10</p> Questions</span>
+            </div>
+            <button class="next-btn">Next Question</button>
+        </footer>
+
+       
+    </main>
+
+     <!-- result box -->
+     <div class="result-box">
+        <div class="complete-text">You've completed the Quiz!</div>
+        <div class="score-text">
+            <span>and you got <p id="final-score">7</p>out of <p>10</p></span>
+        </div>
+        <div class="button-section">
+            <button id="replay"  class="restart">Replay Quiz</button>
+            <button id="quit-quiz" class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
